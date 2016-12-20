@@ -16,6 +16,7 @@
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -379,6 +380,34 @@
         </node>
       </node>
       <node concept="l2Vlx" id="2F3Y2lfa$wW" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2F3Y2lfblyN">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfblxh" resolve="CljDo" />
+    <node concept="3EZMnI" id="2F3Y2lfbl$a" role="2wV5jI">
+      <node concept="3F0ifn" id="2F3Y2lfbl$h" role="3EZMnx">
+        <property role="3F0ifm" value="(do" />
+        <node concept="ljvvj" id="2F3Y2lfbl$k" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2F3Y2lfbHWf" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfblyD" resolve="body" />
+        <node concept="2iRkQZ" id="2F3Y2lfbHWi" role="2czzBx" />
+        <node concept="lj46D" id="2F3Y2lfbHWn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2F3Y2lfbHWA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfbHWN" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="lj46D" id="2F3Y2lfbHWW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfbl$d" role="2iSdaV" />
     </node>
   </node>
 </model>

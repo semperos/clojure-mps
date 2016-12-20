@@ -12,7 +12,6 @@
       </concept>
     </language>
     <language id="6af0e209-c61e-478c-b8ae-87516216f762" name="Clojure.Base">
-      <concept id="1444709419710148818" name="Clojure.Base.structure.CljExpression" flags="ng" index="1tPd2" />
       <concept id="1444709419710148802" name="Clojure.Base.structure.CljNamespace" flags="ng" index="1tPdi">
         <child id="1444709419710148832" name="body" index="1tPdK" />
         <child id="3081579409174692637" name="name" index="1_LZGS" />
@@ -45,6 +44,9 @@
       <concept id="3081579409177110488" name="Clojure.Base.structure.CljDef" flags="ng" index="1_ULZX">
         <child id="3081579409177110773" name="var" index="1_UL3g" />
       </concept>
+      <concept id="3081579409177401425" name="Clojure.Base.structure.CljDo" flags="ng" index="1_VE1O">
+        <child id="3081579409177401513" name="body" index="1_VE2c" />
+      </concept>
     </language>
   </registry>
   <node concept="1tPdi" id="2F3Y2lf7n19">
@@ -69,18 +71,28 @@
         <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
       </node>
     </node>
-    <node concept="1_UrXs" id="2F3Y2lfaGKs" role="1tPdK">
-      <node concept="1_LZH1" id="2F3Y2lfaGLa" role="1_UrZO">
-        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
-      </node>
-      <node concept="1_LZH1" id="2F3Y2lfaGLd" role="1_UrZQ">
-        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
-      </node>
-      <node concept="2ahQpA" id="2F3Y2lfaGLg" role="1_UrZN">
-        <property role="2ahQp_" value="42" />
+    <node concept="1$eCgn" id="2F3Y2lfbK4q" role="1tPdK">
+      <ref role="1_K4jk" node="2F3Y2lf7n2J" resolve="println" />
+      <node concept="1_UrXs" id="2F3Y2lfaGKs" role="1$eChX">
+        <node concept="1_LZH1" id="2F3Y2lfaGLa" role="1_UrZO">
+          <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+        </node>
+        <node concept="2ahQpA" id="2F3Y2lfaGLg" role="1_UrZN">
+          <property role="2ahQp_" value="42" />
+        </node>
+        <node concept="1_VE1O" id="2F3Y2lfbx6N" role="1_UrZQ">
+          <node concept="1$eCgn" id="2F3Y2lfbx6S" role="1_VE2c">
+            <ref role="1_K4jk" node="2F3Y2lf7n2J" resolve="println" />
+            <node concept="1_LZH1" id="2F3Y2lfbx6U" role="1$eChX">
+              <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+            </node>
+          </node>
+          <node concept="2ahQpA" id="2F3Y2lfbx70" role="1_VE2c">
+            <property role="2ahQp_" value="24" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="1tPd2" id="2F3Y2lfaEHU" role="1tPdK" />
     <node concept="2ahQpw" id="2F3Y2lf7n2D" role="1_LZGS">
       <property role="2ahQpZ" value="user" />
     </node>
