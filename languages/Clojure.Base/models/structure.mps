@@ -17,6 +17,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -45,6 +47,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -88,17 +93,22 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="body" />
       <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+      <ref role="20lvS9" node="1gcCT0luZ33" resolve="CljNode" />
     </node>
   </node>
   <node concept="1TIwiD" id="1gcCT0luZ33">
     <property role="EcuMT" value="1444709419710148803" />
     <property role="TrG5h" value="CljNode" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1gcCT0luZ3i">
     <property role="EcuMT" value="1444709419710148818" />
     <property role="TrG5h" value="CljExpression" />
+    <property role="R5$K7" value="false" />
+    <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="expr" />
     <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
     <node concept="PrWs8" id="1gcCT0luZ3j" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -426,6 +436,67 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfbTff">
+    <property role="EcuMT" value="3081579409177547727" />
+    <property role="TrG5h" value="CljLet" />
+    <property role="34LRSv" value="(let" />
+    <property role="R4oN_" value="`let` special form" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="PrWs8" id="2F3Y2lfbTg_" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfbTgB" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177547815" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bindingsDeclaration" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2F3Y2lfbTgD" resolve="CljBindingsDeclaration" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfbV6$" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177555364" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfbTgD">
+    <property role="EcuMT" value="3081579409177547817" />
+    <property role="TrG5h" value="CljBindingsDeclaration" />
+    <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
+    <node concept="1TJgyj" id="2F3Y2lfbTjq" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177547994" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bindings" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2F3Y2lfbThZ" resolve="CljBinding" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfbThZ">
+    <property role="EcuMT" value="3081579409177547903" />
+    <property role="TrG5h" value="CljBinding" />
+    <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
+    <node concept="1TJgyj" id="2F3Y2lfbTjl" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177547989" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bindingSymbol" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="_QN2Y3cqDf" resolve="CljSymbolLiteral" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfbTjn" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177547991" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfduUO">
+    <property role="EcuMT" value="3081579409177964212" />
+    <property role="TrG5h" value="CljEmptyLine" />
+    <property role="3GE5qa" value="editor" />
+    <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
   </node>
 </model>
 

@@ -12,6 +12,7 @@
       </concept>
     </language>
     <language id="6af0e209-c61e-478c-b8ae-87516216f762" name="Clojure.Base">
+      <concept id="1444709419710148818" name="Clojure.Base.structure.CljExpression" flags="ng" index="1tPd2" />
       <concept id="1444709419710148802" name="Clojure.Base.structure.CljNamespace" flags="ng" index="1tPdi">
         <child id="1444709419710148832" name="body" index="1tPdK" />
         <child id="3081579409174692637" name="name" index="1_LZGS" />
@@ -44,9 +45,21 @@
       <concept id="3081579409177110488" name="Clojure.Base.structure.CljDef" flags="ng" index="1_ULZX">
         <child id="3081579409177110773" name="var" index="1_UL3g" />
       </concept>
+      <concept id="3081579409177547727" name="Clojure.Base.structure.CljLet" flags="ng" index="1_V6JE">
+        <child id="3081579409177555364" name="body" index="1_V4A1" />
+        <child id="3081579409177547815" name="bindingsDeclaration" index="1_V6K2" />
+      </concept>
+      <concept id="3081579409177547817" name="Clojure.Base.structure.CljBindingsDeclaration" flags="ng" index="1_V6Kc">
+        <child id="3081579409177547994" name="bindings" index="1_V6NZ" />
+      </concept>
+      <concept id="3081579409177547903" name="Clojure.Base.structure.CljBinding" flags="ng" index="1_V6Lq">
+        <child id="3081579409177547989" name="bindingSymbol" index="1_V6NK" />
+        <child id="3081579409177547991" name="value" index="1_V6NM" />
+      </concept>
       <concept id="3081579409177401425" name="Clojure.Base.structure.CljDo" flags="ng" index="1_VE1O">
         <child id="3081579409177401513" name="body" index="1_VE2c" />
       </concept>
+      <concept id="3081579409177964212" name="Clojure.Base.structure.CljEmptyLine" flags="ng" index="1_Xxqh" />
     </language>
   </registry>
   <node concept="1tPdi" id="2F3Y2lf7n19">
@@ -71,6 +84,46 @@
         <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
       </node>
     </node>
+    <node concept="1_V6JE" id="2F3Y2lfd0j9" role="1tPdK">
+      <node concept="1_V6Kc" id="2F3Y2lfd0jb" role="1_V6K2">
+        <node concept="1_V6Lq" id="2F3Y2lfd7Ap" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfd7Av" role="1_V6NK">
+            <property role="2ahQpZ" value="wow" />
+          </node>
+          <node concept="1_LZH1" id="2F3Y2lfdmgN" role="1_V6NM">
+            <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+          </node>
+        </node>
+        <node concept="1_V6Lq" id="2F3Y2lfdmgQ" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfdmgR" role="1_V6NK">
+            <property role="2ahQpZ" value="wow" />
+          </node>
+          <node concept="2ahQpw" id="2F3Y2lfdmgZ" role="1_V6NM">
+            <property role="2ahQpZ" value="wooh" />
+          </node>
+        </node>
+        <node concept="1_V6Lq" id="2F3Y2lfeuWo" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfeuW$" role="1_V6NK">
+            <property role="2ahQpZ" value="foo" />
+          </node>
+          <node concept="1_LZH1" id="2F3Y2lfeuWB" role="1_V6NM">
+            <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+          </node>
+        </node>
+        <node concept="1_V6Lq" id="2F3Y2lfeJ$B" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfeJ$C" role="1_V6NK">
+            <property role="2ahQpZ" value="foo" />
+          </node>
+          <node concept="1tPd2" id="2F3Y2lfeJ$D" role="1_V6NM" />
+        </node>
+      </node>
+      <node concept="1_LZH1" id="2F3Y2lff4s5" role="1_V4A1">
+        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+      </node>
+    </node>
+    <node concept="1_Xxqh" id="2F3Y2lfferd" role="1tPdK" />
+    <node concept="1_Xxqh" id="2F3Y2lfferI" role="1tPdK" />
+    <node concept="1_Xxqh" id="2F3Y2lffesg" role="1tPdK" />
     <node concept="1$eCgn" id="2F3Y2lfbK4q" role="1tPdK">
       <ref role="1_K4jk" node="2F3Y2lf7n2J" resolve="println" />
       <node concept="1_UrXs" id="2F3Y2lfaGKs" role="1$eChX">
@@ -93,6 +146,7 @@
         </node>
       </node>
     </node>
+    <node concept="1_Xxqh" id="2F3Y2lfeU2u" role="1tPdK" />
     <node concept="2ahQpw" id="2F3Y2lf7n2D" role="1_LZGS">
       <property role="2ahQpZ" value="user" />
     </node>
