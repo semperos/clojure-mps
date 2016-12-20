@@ -347,5 +347,14 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2F3Y2lfaepL">
+    <property role="EcuMT" value="3081579409177110129" />
+    <property role="TrG5h" value="CljMacro" />
+    <property role="R4oN_" value="Concept to capture existing macros, but macros should not be used in ClojureMps itself." />
+    <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
+    <node concept="PrWs8" id="2F3Y2lfaer7" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2leYnJN" resolve="CljIFn" />
+    </node>
+  </node>
 </model>
 
