@@ -742,5 +742,48 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="2F3Y2lfmAQd">
+    <ref role="WuzLi" to="i8ej:2F3Y2lfmAxg" resolve="CljLoop" />
+    <node concept="11bSqf" id="2F3Y2lfmAQe" role="11c4hB">
+      <node concept="3clFbS" id="2F3Y2lfmAQf" role="2VODD2">
+        <node concept="lc7rE" id="2F3Y2lfmATx" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lfmATT" role="lcghm">
+            <property role="lacIc" value="(loop " />
+          </node>
+          <node concept="l9hG8" id="2F3Y2lfmAVL" role="lcghm">
+            <node concept="2OqwBi" id="2F3Y2lfmB8O" role="lb14g">
+              <node concept="117lpO" id="2F3Y2lfmAWH" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2F3Y2lfmBBS" role="2OqNvi">
+                <ref role="3Tt5mk" to="i8ej:2F3Y2lfmA$H" resolve="bindingsDeclaration" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="2F3Y2lfmBLv" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="2F3Y2lfmC4Z" role="3cqZAp">
+          <node concept="3clFbS" id="2F3Y2lfmC51" role="3izTki">
+            <node concept="1bpajm" id="2F3Y2lfmCbh" role="3cqZAp" />
+            <node concept="lc7rE" id="2F3Y2lfmCjH" role="3cqZAp">
+              <node concept="l9S2W" id="2F3Y2lfmCk9" role="lcghm">
+                <property role="XA4eZ" value="true" />
+                <property role="lbP0B" value="\n  " />
+                <node concept="2OqwBi" id="2F3Y2lfmD5z" role="lbANJ">
+                  <node concept="117lpO" id="2F3Y2lfmCkz" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2F3Y2lfmDl8" role="2OqNvi">
+                    <ref role="3TtcxE" to="i8ej:2F3Y2lfmABi" resolve="body" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="2F3Y2lfmHcs" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lfmHhO" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

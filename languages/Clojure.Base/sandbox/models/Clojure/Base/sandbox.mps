@@ -126,6 +126,10 @@
       <concept id="3081579409178765830" name="Clojure.Base.structure.CljVarForm" flags="ng" index="1_wt8z">
         <reference id="3081579409178766030" name="targetVar" index="1_wtbF" />
       </concept>
+      <concept id="3081579409180354640" name="Clojure.Base.structure.CljLoop" flags="ng" index="1_Ap1P">
+        <child id="3081579409180354861" name="bindingsDeclaration" index="1_Ap48" />
+        <child id="3081579409180355026" name="body" index="1_Ap7R" />
+      </concept>
       <concept id="3081579409174692708" name="Clojure.Base.structure.CljVarReference" flags="ng" index="1_LZH1">
         <reference id="3081579409174692794" name="targetVar" index="1_LZIv" />
       </concept>
@@ -206,6 +210,25 @@
           <node concept="1_wt8z" id="2F3Y2lflr1s" role="1_V6NM">
             <ref role="1_wtbF" node="2F3Y2lfgP32" resolve="wow" />
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1_Xxqh" id="2F3Y2lfmOoZ" role="1tPdK" />
+    <node concept="1_Ap1P" id="2F3Y2lfmOt4" role="1tPdK">
+      <node concept="1_V6Kc" id="2F3Y2lfmOt6" role="1_Ap48">
+        <node concept="1_V6Lq" id="2F3Y2lfmOtY" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfmOtZ" role="1_V6NK">
+            <property role="2ahQpZ" value="wow" />
+          </node>
+          <node concept="2ahQpA" id="2F3Y2lfmOu7" role="1_V6NM">
+            <property role="2ahQp_" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="1$eCgn" id="2F3Y2lfmOub" role="1_Ap7R">
+        <ref role="1_K4jk" node="2F3Y2lfgP49" resolve="println" />
+        <node concept="2ahQpG" id="2F3Y2lfmOue" role="1$eChX">
+          <property role="2ahQpD" value="In a loop!" />
         </node>
       </node>
     </node>
