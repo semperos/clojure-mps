@@ -1011,5 +1011,23 @@
       <node concept="l2Vlx" id="2F3Y2lfmQ17" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2F3Y2lfozkT">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfozhG" resolve="CljThrow" />
+    <node concept="3EZMnI" id="2F3Y2lfoznT" role="2wV5jI">
+      <node concept="PMmxH" id="2F3Y2lfozo3" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf51Qv" resolve="lparen" />
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfozob" role="3EZMnx">
+        <property role="3F0ifm" value="throw" />
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfozoo" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfozkI" resolve="throwable" />
+      </node>
+      <node concept="PMmxH" id="2F3Y2lfozoD" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfoznW" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

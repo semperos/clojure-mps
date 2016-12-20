@@ -133,6 +133,9 @@
         <child id="3081579409180354861" name="bindingsDeclaration" index="1_Ap48" />
         <child id="3081579409180355026" name="body" index="1_Ap7R" />
       </concept>
+      <concept id="3081579409180865644" name="Clojure.Base.structure.CljThrow" flags="ng" index="1_CsL9">
+        <child id="3081579409180865838" name="throwable" index="1_CsOb" />
+      </concept>
       <concept id="3081579409174692708" name="Clojure.Base.structure.CljVarReference" flags="ng" index="1_LZH1">
         <reference id="3081579409174692794" name="targetVar" index="1_LZIv" />
       </concept>
@@ -238,6 +241,11 @@
         <node concept="2ahQpA" id="2F3Y2lfozhe" role="1_AatV">
           <property role="2ahQp_" value="42" />
         </node>
+      </node>
+    </node>
+    <node concept="1_CsL9" id="2F3Y2lfoI4y" role="1tPdK">
+      <node concept="1_LZH1" id="2F3Y2lfoI5I" role="1_CsOb">
+        <ref role="1_LZIv" node="2F3Y2lfgP32" resolve="wow" />
       </node>
     </node>
     <node concept="2ahQpw" id="2F3Y2lfgP2T" role="1_LZGS">

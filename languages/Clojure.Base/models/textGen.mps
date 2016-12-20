@@ -810,5 +810,28 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="2F3Y2lfozp5">
+    <ref role="WuzLi" to="i8ej:2F3Y2lfozhG" resolve="CljThrow" />
+    <node concept="11bSqf" id="2F3Y2lfozp6" role="11c4hB">
+      <node concept="3clFbS" id="2F3Y2lfozp7" role="2VODD2">
+        <node concept="lc7rE" id="2F3Y2lfozsp" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lfozsL" role="lcghm">
+            <property role="lacIc" value="(throw " />
+          </node>
+          <node concept="l9hG8" id="2F3Y2lfoztH" role="lcghm">
+            <node concept="2OqwBi" id="2F3Y2lfozEK" role="lb14g">
+              <node concept="117lpO" id="2F3Y2lfozuD" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2F3Y2lfozUT" role="2OqNvi">
+                <ref role="3Tt5mk" to="i8ej:2F3Y2lfozkI" resolve="throwable" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2F3Y2lfo$4M" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
