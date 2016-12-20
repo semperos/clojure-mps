@@ -584,5 +584,32 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2F3Y2lffH7$">
+    <ref role="1XX52x" to="i8ej:2F3Y2lff_v3" resolve="CljQuote" />
+    <node concept="3EZMnI" id="2F3Y2lffH8V" role="2wV5jI">
+      <node concept="3F0ifn" id="2F3Y2lffH92" role="3EZMnx">
+        <property role="3F0ifm" value="(quote" />
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lffH98" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lff_wr" resolve="node" />
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lffH9g" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2F3Y2lffHfs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lffH8Y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2F3Y2lffXyj">
+    <ref role="1XX52x" to="i8ej:1gcCT0luZ33" resolve="CljNode" />
+    <node concept="3F0ifn" id="2F3Y2lffXzH" role="2wV5jI">
+      <property role="ilYzB" value="&lt;no form&gt;" />
+      <node concept="VPxyj" id="2F3Y2lffX_Q" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 

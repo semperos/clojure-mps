@@ -12,6 +12,7 @@
       </concept>
     </language>
     <language id="6af0e209-c61e-478c-b8ae-87516216f762" name="Clojure.Base">
+      <concept id="1444709419710148818" name="Clojure.Base.structure.CljExpression" flags="ng" index="1tPd2" />
       <concept id="1444709419710148802" name="Clojure.Base.structure.CljNamespace" flags="ng" index="1tPdi">
         <child id="1444709419710148832" name="body" index="1tPdK" />
         <child id="3081579409174692637" name="name" index="1_LZGS" />
@@ -59,6 +60,9 @@
         <child id="3081579409177401513" name="body" index="1_VE2c" />
       </concept>
       <concept id="3081579409177964212" name="Clojure.Base.structure.CljEmptyLine" flags="ng" index="1_Xxqh" />
+      <concept id="3081579409178515395" name="Clojure.Base.structure.CljQuote" flags="ng" index="1_ZqZA">
+        <child id="3081579409178515483" name="node" index="1_Zq0Y" />
+      </concept>
     </language>
   </registry>
   <node concept="1tPdi" id="2F3Y2lf7n19">
@@ -84,6 +88,11 @@
       </node>
     </node>
     <node concept="1_V6JE" id="2F3Y2lfd0j9" role="1tPdK">
+      <node concept="1_ZqZA" id="2F3Y2lffXxA" role="1_V4A1">
+        <node concept="1_LZH1" id="2F3Y2lfg5rD" role="1_Zq0Y">
+          <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+        </node>
+      </node>
       <node concept="1_V6Kc" id="2F3Y2lfd0jb" role="1_V6K2">
         <node concept="1_V6Lq" id="2F3Y2lfd7Ap" role="1_V6NZ">
           <node concept="2ahQpw" id="2F3Y2lfd7Av" role="1_V6NK">
@@ -91,14 +100,6 @@
           </node>
           <node concept="1_LZH1" id="2F3Y2lfdmgN" role="1_V6NM">
             <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
-          </node>
-        </node>
-        <node concept="1_V6Lq" id="2F3Y2lfdmgQ" role="1_V6NZ">
-          <node concept="2ahQpw" id="2F3Y2lfdmgR" role="1_V6NK">
-            <property role="2ahQpZ" value="wow" />
-          </node>
-          <node concept="2ahQpw" id="2F3Y2lfdmgZ" role="1_V6NM">
-            <property role="2ahQpZ" value="wooh" />
           </node>
         </node>
         <node concept="1_V6Lq" id="2F3Y2lfeuWo" role="1_V6NZ">
@@ -113,9 +114,7 @@
           <node concept="2ahQpw" id="2F3Y2lfeJ$C" role="1_V6NK">
             <property role="2ahQpZ" value="foo" />
           </node>
-          <node concept="2ahQpA" id="2F3Y2lff_rw" role="1_V6NM">
-            <property role="2ahQp_" value="42" />
-          </node>
+          <node concept="1tPd2" id="2F3Y2lfgfHW" role="1_V6NM" />
         </node>
       </node>
       <node concept="1_LZH1" id="2F3Y2lff4s5" role="1_V4A1">

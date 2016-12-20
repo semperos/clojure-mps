@@ -106,7 +106,7 @@
   <node concept="1TIwiD" id="1gcCT0luZ3i">
     <property role="EcuMT" value="1444709419710148818" />
     <property role="TrG5h" value="CljExpression" />
-    <property role="R5$K7" value="false" />
+    <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="34LRSv" value="expr" />
     <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
@@ -497,6 +497,23 @@
     <property role="TrG5h" value="CljEmptyLine" />
     <property role="3GE5qa" value="editor" />
     <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lff_v3">
+    <property role="EcuMT" value="3081579409178515395" />
+    <property role="TrG5h" value="CljQuote" />
+    <property role="34LRSv" value="(quote" />
+    <property role="R4oN_" value="`quote` special form" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="PrWs8" id="2F3Y2lff_wp" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lff_wr" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409178515483" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="node" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcCT0luZ33" resolve="CljNode" />
+    </node>
   </node>
 </model>
 

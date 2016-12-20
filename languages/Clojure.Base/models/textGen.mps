@@ -668,5 +668,28 @@
       <node concept="3clFbS" id="2F3Y2lff4s9" role="2VODD2" />
     </node>
   </node>
+  <node concept="WtQ9Q" id="2F3Y2lffOWd">
+    <ref role="WuzLi" to="i8ej:2F3Y2lff_v3" resolve="CljQuote" />
+    <node concept="11bSqf" id="2F3Y2lffOWe" role="11c4hB">
+      <node concept="3clFbS" id="2F3Y2lffOWf" role="2VODD2">
+        <node concept="lc7rE" id="2F3Y2lffOXS" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lffOYe" role="lcghm">
+            <property role="lacIc" value="(quote " />
+          </node>
+          <node concept="l9hG8" id="2F3Y2lffOZ_" role="lcghm">
+            <node concept="2OqwBi" id="2F3Y2lffPc_" role="lb14g">
+              <node concept="117lpO" id="2F3Y2lffP0u" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2F3Y2lffPsD" role="2OqNvi">
+                <ref role="3Tt5mk" to="i8ej:2F3Y2lff_wr" resolve="node" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2F3Y2lffP_T" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
