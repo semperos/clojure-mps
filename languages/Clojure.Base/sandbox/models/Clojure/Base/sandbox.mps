@@ -12,7 +12,6 @@
       </concept>
     </language>
     <language id="6af0e209-c61e-478c-b8ae-87516216f762" name="Clojure.Base">
-      <concept id="1444709419710148818" name="Clojure.Base.structure.CljExpression" flags="ng" index="1tPd2" />
       <concept id="1444709419710148802" name="Clojure.Base.structure.CljNamespace" flags="ng" index="1tPdi">
         <child id="1444709419710148832" name="body" index="1tPdK" />
         <child id="3081579409174692637" name="name" index="1_LZGS" />
@@ -114,7 +113,9 @@
           <node concept="2ahQpw" id="2F3Y2lfeJ$C" role="1_V6NK">
             <property role="2ahQpZ" value="foo" />
           </node>
-          <node concept="1tPd2" id="2F3Y2lfeJ$D" role="1_V6NM" />
+          <node concept="2ahQpA" id="2F3Y2lff_rw" role="1_V6NM">
+            <property role="2ahQp_" value="42" />
+          </node>
         </node>
       </node>
       <node concept="1_LZH1" id="2F3Y2lff4s5" role="1_V4A1">
