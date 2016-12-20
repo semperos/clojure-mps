@@ -785,5 +785,30 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="2F3Y2lfmQ2G">
+    <ref role="WuzLi" to="i8ej:2F3Y2lfmPU1" resolve="CljRecur" />
+    <node concept="11bSqf" id="2F3Y2lfmQ2H" role="11c4hB">
+      <node concept="3clFbS" id="2F3Y2lfmQ2I" role="2VODD2">
+        <node concept="lc7rE" id="2F3Y2lfmQ60" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lfmQ6o" role="lcghm">
+            <property role="lacIc" value="(recur " />
+          </node>
+          <node concept="l9S2W" id="2F3Y2lfmQ7z" role="lcghm">
+            <property role="XA4eZ" value="true" />
+            <property role="lbP0B" value="\n  " />
+            <node concept="2OqwBi" id="2F3Y2lfmQs3" role="lbANJ">
+              <node concept="117lpO" id="2F3Y2lfmQ8J" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="2F3Y2lfmQFC" role="2OqNvi">
+                <ref role="3TtcxE" to="i8ej:2F3Y2lfmPXu" resolve="recurValues" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="2F3Y2lfmST_" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

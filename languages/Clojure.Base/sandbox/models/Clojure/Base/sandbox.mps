@@ -126,6 +126,9 @@
       <concept id="3081579409178765830" name="Clojure.Base.structure.CljVarForm" flags="ng" index="1_wt8z">
         <reference id="3081579409178766030" name="targetVar" index="1_wtbF" />
       </concept>
+      <concept id="3081579409180417665" name="Clojure.Base.structure.CljRecur" flags="ng" index="1_Aaq$">
+        <child id="3081579409180417886" name="recurValues" index="1_AatV" />
+      </concept>
       <concept id="3081579409180354640" name="Clojure.Base.structure.CljLoop" flags="ng" index="1_Ap1P">
         <child id="3081579409180354861" name="bindingsDeclaration" index="1_Ap48" />
         <child id="3081579409180355026" name="body" index="1_Ap7R" />
@@ -214,21 +217,26 @@
       </node>
     </node>
     <node concept="1_Xxqh" id="2F3Y2lfmOoZ" role="1tPdK" />
-    <node concept="1_Ap1P" id="2F3Y2lfmOt4" role="1tPdK">
-      <node concept="1_V6Kc" id="2F3Y2lfmOt6" role="1_Ap48">
-        <node concept="1_V6Lq" id="2F3Y2lfmOtY" role="1_V6NZ">
-          <node concept="2ahQpw" id="2F3Y2lfmOtZ" role="1_V6NK">
+    <node concept="1_Ap1P" id="2F3Y2lfnB6G" role="1tPdK">
+      <node concept="1_V6Kc" id="2F3Y2lfnB6I" role="1_Ap48">
+        <node concept="1_V6Lq" id="2F3Y2lfnB7A" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfnB7B" role="1_V6NK">
             <property role="2ahQpZ" value="wow" />
           </node>
-          <node concept="2ahQpA" id="2F3Y2lfmOu7" role="1_V6NM">
+          <node concept="2ahQpA" id="2F3Y2lfnB7J" role="1_V6NM">
             <property role="2ahQp_" value="0" />
           </node>
         </node>
       </node>
-      <node concept="1$eCgn" id="2F3Y2lfmOub" role="1_Ap7R">
+      <node concept="1$eCgn" id="2F3Y2lfnB7N" role="1_Ap7R">
         <ref role="1_K4jk" node="2F3Y2lfgP49" resolve="println" />
-        <node concept="2ahQpG" id="2F3Y2lfmOue" role="1$eChX">
-          <property role="2ahQpD" value="In a loop!" />
+        <node concept="1_LZH1" id="2F3Y2lfnB7Q" role="1$eChX">
+          <ref role="1_LZIv" node="2F3Y2lfgP32" resolve="wow" />
+        </node>
+      </node>
+      <node concept="1_Aaq$" id="2F3Y2lfnB80" role="1_Ap7R">
+        <node concept="2ahQpA" id="2F3Y2lfozhe" role="1_AatV">
+          <property role="2ahQp_" value="42" />
         </node>
       </node>
     </node>

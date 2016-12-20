@@ -65,6 +65,7 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
@@ -91,8 +92,17 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -289,6 +299,201 @@
     <node concept="1YaCAy" id="2F3Y2lf2fbG" role="1YuTPh">
       <property role="TrG5h" value="cljIFnCall" />
       <ref role="1YaFvo" to="i8ej:2F3Y2leYnKM" resolve="CljIFnCall" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2F3Y2lfnpSr">
+    <property role="TrG5h" value="check_CljRecur" />
+    <node concept="3clFbS" id="2F3Y2lfnpSs" role="18ibNy">
+      <node concept="3clFbJ" id="2F3Y2lfnpVw" role="3cqZAp">
+        <node concept="1Wc70l" id="2F3Y2lfnBZt" role="3clFbw">
+          <node concept="2OqwBi" id="2F3Y2lfnqOy" role="3uHU7B">
+            <node concept="2OqwBi" id="2F3Y2lfnq7r" role="2Oq$k0">
+              <node concept="1YBJjd" id="2F3Y2lfnpVJ" role="2Oq$k0">
+                <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+              </node>
+              <node concept="2Xjw5R" id="2F3Y2lfnq_J" role="2OqNvi">
+                <node concept="1xMEDy" id="2F3Y2lfnq_L" role="1xVPHs">
+                  <node concept="chp4Y" id="2F3Y2lfnqBN" role="ri$Ld">
+                    <ref role="cht4Q" to="i8ej:2F3Y2lfmAxg" resolve="CljLoop" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2F3Y2lfnrkj" role="2OqNvi" />
+          </node>
+          <node concept="2OqwBi" id="2F3Y2lfnsY$" role="3uHU7w">
+            <node concept="2OqwBi" id="2F3Y2lfns81" role="2Oq$k0">
+              <node concept="1YBJjd" id="2F3Y2lfnrWa" role="2Oq$k0">
+                <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+              </node>
+              <node concept="2Xjw5R" id="2F3Y2lfnsCT" role="2OqNvi">
+                <node concept="1xMEDy" id="2F3Y2lfnsCV" role="1xVPHs">
+                  <node concept="chp4Y" id="2F3Y2lfnsHw" role="ri$Ld">
+                    <ref role="cht4Q" to="i8ej:2F3Y2leYnHu" resolve="CljFn" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w_OXm" id="2F3Y2lfntiW" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2F3Y2lfnpVy" role="3clFbx">
+          <node concept="2MkqsV" id="2F3Y2lfnrmK" role="3cqZAp">
+            <node concept="Xl_RD" id="2F3Y2lfnrn2" role="2MkJ7o">
+              <property role="Xl_RC" value="The `recur` form is only legal inside `loop` or `fn`" />
+            </node>
+            <node concept="1YBJjd" id="2F3Y2lfntEz" role="2OEOjV">
+              <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cpWs8" id="2F3Y2lfnLCw" role="3cqZAp">
+        <node concept="3cpWsn" id="2F3Y2lfnLCz" role="3cpWs9">
+          <property role="TrG5h" value="parentLoop" />
+          <node concept="3Tqbb2" id="2F3Y2lfnLCu" role="1tU5fm">
+            <ref role="ehGHo" to="i8ej:2F3Y2lfmAxg" resolve="CljLoop" />
+          </node>
+          <node concept="2OqwBi" id="2F3Y2lfnLPp" role="33vP2m">
+            <node concept="1YBJjd" id="2F3Y2lfnLDD" role="2Oq$k0">
+              <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+            </node>
+            <node concept="2Xjw5R" id="2F3Y2lfnMaj" role="2OqNvi">
+              <node concept="1xMEDy" id="2F3Y2lfnMal" role="1xVPHs">
+                <node concept="chp4Y" id="2F3Y2lfnMaO" role="ri$Ld">
+                  <ref role="cht4Q" to="i8ej:2F3Y2lfmAxg" resolve="CljLoop" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2F3Y2lfo5dK" role="3cqZAp">
+        <node concept="3clFbS" id="2F3Y2lfo5dM" role="3clFbx">
+          <node concept="3clFbJ" id="2F3Y2lfnMVz" role="3cqZAp">
+            <node concept="3clFbS" id="2F3Y2lfnMV_" role="3clFbx">
+              <node concept="2MkqsV" id="2F3Y2lfo3Id" role="3cqZAp">
+                <node concept="Xl_RD" id="2F3Y2lfo3Iv" role="2MkJ7o">
+                  <property role="Xl_RC" value="The `recur` form must receive as many arguments as its parent `loop` has bindings." />
+                </node>
+                <node concept="1YBJjd" id="2F3Y2lfo65_" role="2OEOjV">
+                  <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="2F3Y2lfnVQq" role="3clFbw">
+              <node concept="2OqwBi" id="2F3Y2lfnZFw" role="3uHU7w">
+                <node concept="2OqwBi" id="2F3Y2lfnXcL" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2F3Y2lfnWkb" role="2Oq$k0">
+                    <node concept="37vLTw" id="2F3Y2lfnVZK" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2F3Y2lfnLCz" resolve="parentLoop" />
+                    </node>
+                    <node concept="3TrEf2" id="2F3Y2lfnWAF" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i8ej:2F3Y2lfmA$H" resolve="bindingsDeclaration" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="2F3Y2lfnXuE" role="2OqNvi">
+                    <ref role="3TtcxE" to="i8ej:2F3Y2lfbTjq" resolve="bindings" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2F3Y2lfo3_Y" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2F3Y2lfnPL4" role="3uHU7B">
+                <node concept="2OqwBi" id="2F3Y2lfnN8q" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2F3Y2lfnMWI" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+                  </node>
+                  <node concept="3Tsc0h" id="2F3Y2lfnNts" role="2OqNvi">
+                    <ref role="3TtcxE" to="i8ej:2F3Y2lfmPXu" resolve="recurValues" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2F3Y2lfnUey" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2F3Y2lfo5$U" role="3clFbw">
+          <node concept="37vLTw" id="2F3Y2lfo5fJ" role="2Oq$k0">
+            <ref role="3cqZAo" node="2F3Y2lfnLCz" resolve="parentLoop" />
+          </node>
+          <node concept="3x8VRR" id="2F3Y2lfo63b" role="2OqNvi" />
+        </node>
+      </node>
+      <node concept="3cpWs8" id="2F3Y2lfo3Li" role="3cqZAp">
+        <node concept="3cpWsn" id="2F3Y2lfo3Ll" role="3cpWs9">
+          <property role="TrG5h" value="parentFn" />
+          <node concept="3Tqbb2" id="2F3Y2lfo3Lg" role="1tU5fm">
+            <ref role="ehGHo" to="i8ej:2F3Y2leYnHu" resolve="CljFn" />
+          </node>
+          <node concept="2OqwBi" id="2F3Y2lfo3YX" role="33vP2m">
+            <node concept="1YBJjd" id="2F3Y2lfo3Nd" role="2Oq$k0">
+              <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+            </node>
+            <node concept="2Xjw5R" id="2F3Y2lfo56K" role="2OqNvi">
+              <node concept="1xMEDy" id="2F3Y2lfo56M" role="1xVPHs">
+                <node concept="chp4Y" id="2F3Y2lfo57h" role="ri$Ld">
+                  <ref role="cht4Q" to="i8ej:2F3Y2leYnHu" resolve="CljFn" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="2F3Y2lfo6DG" role="3cqZAp">
+        <node concept="3clFbS" id="2F3Y2lfo6DI" role="3clFbx">
+          <node concept="3clFbJ" id="2F3Y2lfo7ez" role="3cqZAp">
+            <node concept="3clFbS" id="2F3Y2lfo7e_" role="3clFbx">
+              <node concept="2MkqsV" id="2F3Y2lfopoz" role="3cqZAp">
+                <node concept="Xl_RD" id="2F3Y2lfopoP" role="2MkJ7o">
+                  <property role="Xl_RC" value="The `recur` form must receive as many arguments as its parent `fn` parameters." />
+                </node>
+                <node concept="1YBJjd" id="2F3Y2lfopr3" role="2OEOjV">
+                  <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="2F3Y2lfofJR" role="3clFbw">
+              <node concept="2OqwBi" id="2F3Y2lfokiL" role="3uHU7w">
+                <node concept="2OqwBi" id="2F3Y2lfohio" role="2Oq$k0">
+                  <node concept="2OqwBi" id="2F3Y2lfogjF" role="2Oq$k0">
+                    <node concept="37vLTw" id="2F3Y2lfofX_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2F3Y2lfo3Ll" resolve="parentFn" />
+                    </node>
+                    <node concept="3TrEf2" id="2F3Y2lfogDu" role="2OqNvi">
+                      <ref role="3Tt5mk" to="i8ej:2F3Y2leYW8s" resolve="parameterDeclaration" />
+                    </node>
+                  </node>
+                  <node concept="3Tsc0h" id="2F3Y2lfohz0" role="2OqNvi">
+                    <ref role="3TtcxE" to="i8ej:2F3Y2leYVYd" resolve="parameters" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2F3Y2lfopg8" role="2OqNvi" />
+              </node>
+              <node concept="2OqwBi" id="2F3Y2lfoaqN" role="3uHU7B">
+                <node concept="2OqwBi" id="2F3Y2lfo7qy" role="2Oq$k0">
+                  <node concept="1YBJjd" id="2F3Y2lfo7eQ" role="2Oq$k0">
+                    <ref role="1YBMHb" node="2F3Y2lfnpSu" resolve="cljRecur" />
+                  </node>
+                  <node concept="3Tsc0h" id="2F3Y2lfo84X" role="2OqNvi">
+                    <ref role="3TtcxE" to="i8ej:2F3Y2lfmPXu" resolve="recurValues" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="2F3Y2lfoeWD" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="2F3Y2lfo6Tc" role="3clFbw">
+          <node concept="37vLTw" id="2F3Y2lfo6FP" role="2Oq$k0">
+            <ref role="3cqZAo" node="2F3Y2lfo3Ll" resolve="parentFn" />
+          </node>
+          <node concept="3x8VRR" id="2F3Y2lfo7bP" role="2OqNvi" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2F3Y2lfnpSu" role="1YuTPh">
+      <property role="TrG5h" value="cljRecur" />
+      <ref role="1YaFvo" to="i8ej:2F3Y2lfmPU1" resolve="CljRecur" />
     </node>
   </node>
 </model>

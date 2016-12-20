@@ -156,7 +156,7 @@
     </node>
   </node>
   <node concept="1M2fIO" id="2F3Y2lf1ND9">
-    <ref role="1M2myG" to="i8ej:2F3Y2leYnLy" resolve="CljVarDeclaration" />
+    <ref role="1M2myG" to="i8ej:2F3Y2leYnLy" resolve="CljVar" />
     <node concept="EnEH3" id="2F3Y2lf1NEv" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="2F3Y2lf1NEy" role="EtsB7">

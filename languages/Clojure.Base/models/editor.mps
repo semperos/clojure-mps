@@ -986,5 +986,30 @@
       <node concept="l2Vlx" id="2F3Y2lfmAMz" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="2F3Y2lfmPY4">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfmPU1" resolve="CljRecur" />
+    <node concept="3EZMnI" id="2F3Y2lfmQ14" role="2wV5jI">
+      <node concept="PMmxH" id="2F3Y2lfmQ1e" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf51Qv" resolve="lparen" />
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfmQ1m" role="3EZMnx">
+        <property role="3F0ifm" value="recur" />
+      </node>
+      <node concept="3F2HdR" id="2F3Y2lfmQ1z" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfmPXu" resolve="recurValues" />
+        <node concept="2iRkQZ" id="2F3Y2lfmQ1A" role="2czzBx" />
+        <node concept="ljvvj" id="2F3Y2lfmQ1J" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="2F3Y2lfmQ20" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
+        <node concept="lj46D" id="2F3Y2lfmQ2d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfmQ17" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
