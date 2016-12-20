@@ -117,6 +117,7 @@
   <node concept="1TIwiD" id="_QN2Y3cqD3">
     <property role="EcuMT" value="681956898029808195" />
     <property role="TrG5h" value="CljString" />
+    <property role="34LRSv" value="&quot;" />
     <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
     <node concept="1TJgyi" id="_QN2Y3cqD6" role="1TKVEl">
       <property role="IQ2nx" value="681956898029808198" />
@@ -334,7 +335,7 @@
     <node concept="1TJgyj" id="2F3Y2lf10eU" role="1TKVEi">
       <property role="IQ2ns" value="3081579409174692794" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="target" />
+      <property role="20kJfa" value="targetVar" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVar" />
     </node>
@@ -513,6 +514,23 @@
       <property role="20kJfa" value="node" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1gcCT0luZ33" resolve="CljNode" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfgyC6">
+    <property role="EcuMT" value="3081579409178765830" />
+    <property role="TrG5h" value="CljVarForm" />
+    <property role="34LRSv" value="(var" />
+    <property role="R4oN_" value="`var` special form" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="PrWs8" id="2F3Y2lfgyDs" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfgyFe" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409178766030" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="targetVar" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVar" />
     </node>
   </node>
 </model>
