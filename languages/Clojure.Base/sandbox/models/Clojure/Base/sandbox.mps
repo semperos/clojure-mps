@@ -26,7 +26,7 @@
         <reference id="3081579409174674673" name="callee" index="1_K4jk" />
         <child id="3081579409174002776" name="arguments" index="1$eChX" />
       </concept>
-      <concept id="3081579409174002786" name="Clojure.Base.structure.CljVarDeclaration" flags="ng" index="1$eCh7">
+      <concept id="3081579409174002786" name="Clojure.Base.structure.CljVar" flags="ng" index="1$eCh7">
         <child id="3081579409174002856" name="name" index="1$eCid" />
         <child id="3081579409174002843" name="value" index="1$eCiY" />
       </concept>
@@ -36,6 +36,9 @@
       <concept id="3081579409175512448" name="Clojure.Base.structure.CljHackCoreFunction" flags="ng" index="1_ORQ_">
         <property id="3081579409175512537" name="numArgs" index="1_ORRW" />
       </concept>
+      <concept id="3081579409177110488" name="Clojure.Base.structure.CljDef" flags="ng" index="1_ULZX">
+        <child id="3081579409177110773" name="var" index="1_UL3g" />
+      </concept>
     </language>
   </registry>
   <node concept="1tPdi" id="2F3Y2lf7n19">
@@ -44,18 +47,20 @@
       <property role="TrG5h" value="println" />
       <property role="1_ORRW" value="1" />
     </node>
-    <node concept="1$eCh7" id="2F3Y2lf7n35" role="1tPdK">
-      <node concept="2ahQpw" id="2F3Y2lf7n37" role="1$eCid">
-        <property role="2ahQpZ" value="wow" />
-      </node>
-      <node concept="2ahQpA" id="2F3Y2lf7n3h" role="1$eCiY">
-        <property role="2ahQp_" value="42" />
+    <node concept="1_ULZX" id="2F3Y2lfarl2" role="1tPdK">
+      <node concept="1$eCh7" id="2F3Y2lfarl4" role="1_UL3g">
+        <node concept="2ahQpw" id="2F3Y2lfarle" role="1$eCid">
+          <property role="2ahQpZ" value="wow" />
+        </node>
+        <node concept="2ahQpA" id="2F3Y2lfarlh" role="1$eCiY">
+          <property role="2ahQp_" value="42" />
+        </node>
       </node>
     </node>
     <node concept="1$eCgn" id="2F3Y2lf7n2S" role="1tPdK">
       <ref role="1_K4jk" node="2F3Y2lf7n2J" resolve="println" />
-      <node concept="1_LZH1" id="2F3Y2lf7n3k" role="1$eChX">
-        <ref role="1_LZIv" node="2F3Y2lf7n35" resolve="wow" />
+      <node concept="1_LZH1" id="2F3Y2lfarlz" role="1$eChX">
+        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
       </node>
     </node>
     <node concept="2ahQpw" id="2F3Y2lf7n2D" role="1_LZGS">

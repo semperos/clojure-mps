@@ -264,9 +264,8 @@
   </node>
   <node concept="1TIwiD" id="2F3Y2leYnLy">
     <property role="EcuMT" value="3081579409174002786" />
-    <property role="TrG5h" value="CljVarDeclaration" />
-    <property role="R4oN_" value="create a named Clojure var" />
-    <property role="34LRSv" value="(def" />
+    <property role="TrG5h" value="CljVar" />
+    <property role="R4oN_" value="a named Clojure var" />
     <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
     <node concept="1TJgyj" id="2F3Y2leYnMC" role="1TKVEi">
       <property role="IQ2ns" value="3081579409174002856" />
@@ -324,7 +323,7 @@
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVarDeclaration" />
+      <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVar" />
     </node>
     <node concept="PrWs8" id="2F3Y2lf5Mva" role="PzmwI">
       <ref role="PrY4T" node="2F3Y2leYnJN" resolve="CljIFn" />
@@ -354,6 +353,27 @@
     <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
     <node concept="PrWs8" id="2F3Y2lfaer7" role="PzmwI">
       <ref role="PrY4T" node="2F3Y2leYnJN" resolve="CljIFn" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2F3Y2lfaer9">
+    <property role="EcuMT" value="3081579409177110217" />
+    <property role="TrG5h" value="CljSpecialForm" />
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfaevo">
+    <property role="EcuMT" value="3081579409177110488" />
+    <property role="TrG5h" value="CljDef" />
+    <property role="R4oN_" value="create a Clojure var" />
+    <property role="34LRSv" value="(def" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="PrWs8" id="2F3Y2lfaewI" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfaezP" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177110773" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="var" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVar" />
     </node>
   </node>
 </model>

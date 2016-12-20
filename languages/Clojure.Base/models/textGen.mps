@@ -335,7 +335,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2F3Y2lf1h9H">
-    <ref role="WuzLi" to="i8ej:2F3Y2leYnLy" resolve="CljVarDeclaration" />
+    <ref role="WuzLi" to="i8ej:2F3Y2lfaevo" resolve="CljDef" />
     <node concept="11bSqf" id="2F3Y2lf1h9I" role="11c4hB">
       <node concept="3clFbS" id="2F3Y2lf1h9J" role="2VODD2">
         <node concept="3SKdUt" id="2F3Y2lf1hbo" role="3cqZAp">
@@ -348,9 +348,14 @@
             <property role="lacIc" value="(def " />
           </node>
           <node concept="l9hG8" id="2F3Y2lf1hf6" role="lcghm">
-            <node concept="2OqwBi" id="2F3Y2lf1hsW" role="lb14g">
-              <node concept="117lpO" id="2F3Y2lf1hg2" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2F3Y2lf1hIA" role="2OqNvi">
+            <node concept="2OqwBi" id="2F3Y2lfasj1" role="lb14g">
+              <node concept="2OqwBi" id="2F3Y2lf1hsW" role="2Oq$k0">
+                <node concept="117lpO" id="2F3Y2lf1hg2" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2F3Y2lfarNU" role="2OqNvi">
+                  <ref role="3Tt5mk" to="i8ej:2F3Y2lfaezP" resolve="var" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2F3Y2lfasEe" role="2OqNvi">
                 <ref role="3Tt5mk" to="i8ej:2F3Y2leYnMC" resolve="name" />
               </node>
             </node>
@@ -359,9 +364,14 @@
             <property role="lacIc" value=" " />
           </node>
           <node concept="l9hG8" id="2F3Y2lf1hSZ" role="lcghm">
-            <node concept="2OqwBi" id="2F3Y2lf1ibJ" role="lb14g">
-              <node concept="117lpO" id="2F3Y2lf1hYP" role="2Oq$k0" />
-              <node concept="3TrEf2" id="2F3Y2lf1itp" role="2OqNvi">
+            <node concept="2OqwBi" id="2F3Y2lfatIE" role="lb14g">
+              <node concept="2OqwBi" id="2F3Y2lf1ibJ" role="2Oq$k0">
+                <node concept="117lpO" id="2F3Y2lf1hYP" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2F3Y2lfatfz" role="2OqNvi">
+                  <ref role="3Tt5mk" to="i8ej:2F3Y2lfaezP" resolve="var" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2F3Y2lfaupw" role="2OqNvi">
                 <ref role="3Tt5mk" to="i8ej:2F3Y2leYnMr" resolve="value" />
               </node>
             </node>
