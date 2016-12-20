@@ -44,6 +44,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -339,6 +341,44 @@
         <ref role="1NtTu8" to="i8ej:2F3Y2leYnMr" resolve="value" />
       </node>
       <node concept="l2Vlx" id="2F3Y2lfalwS" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2F3Y2lfa$vy">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfa$tT" resolve="CljIf" />
+    <node concept="3EZMnI" id="2F3Y2lfa$wT" role="2wV5jI">
+      <node concept="3F0ifn" id="2F3Y2lfa$x0" role="3EZMnx">
+        <property role="3F0ifm" value="(if" />
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfa$x6" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1$x2rV" value="&lt;condition&gt;" />
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfa$vh" resolve="condition" />
+        <node concept="ljvvj" id="2F3Y2lfa$xa" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfa$xq" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfa$vj" resolve="thenBranch" />
+        <node concept="ljvvj" id="2F3Y2lfa$xw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2F3Y2lfa$xM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfa$xE" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfa$vm" resolve="elseBranch" />
+        <node concept="lj46D" id="2F3Y2lfa$xR" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfa$y4" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="2F3Y2lfa$Ar" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfa$wW" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -376,5 +376,36 @@
       <ref role="20lvS9" node="2F3Y2leYnLy" resolve="CljVar" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2F3Y2lfa$tT">
+    <property role="EcuMT" value="3081579409177200505" />
+    <property role="TrG5h" value="CljIf" />
+    <property role="34LRSv" value="(if" />
+    <property role="R4oN_" value="`if` special form" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="PrWs8" id="2F3Y2lfa$vf" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfa$vh" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177200593" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfa$vj" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177200595" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="thenBranch" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfa$vm" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409177200598" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="elseBranch" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+  </node>
 </model>
 

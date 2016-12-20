@@ -67,6 +67,7 @@
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
+      <concept id="1233920501193" name="jetbrains.mps.lang.textGen.structure.IndentBufferOperation" flags="nn" index="1bpajm" />
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0" />
       <concept id="1236188139846" name="jetbrains.mps.lang.textGen.structure.WithIndentOperation" flags="nn" index="3izx1p">
         <child id="1236188238861" name="list" index="3izTki" />
@@ -470,6 +471,58 @@
               <node concept="3TrcHB" id="2F3Y2lf6veB" role="2OqNvi">
                 <ref role="3TsBF5" to="i8ej:_QN2Y3cqDg" resolve="value" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="2F3Y2lfaGLN">
+    <ref role="WuzLi" to="i8ej:2F3Y2lfa$tT" resolve="CljIf" />
+    <node concept="11bSqf" id="2F3Y2lfaGLO" role="11c4hB">
+      <node concept="3clFbS" id="2F3Y2lfaGLP" role="2VODD2">
+        <node concept="lc7rE" id="2F3Y2lfaGNu" role="3cqZAp">
+          <node concept="la8eA" id="2F3Y2lfaGNO" role="lcghm">
+            <property role="lacIc" value="(if " />
+          </node>
+          <node concept="l9hG8" id="2F3Y2lfaGOW" role="lcghm">
+            <node concept="2OqwBi" id="2F3Y2lfaH1W" role="lb14g">
+              <node concept="117lpO" id="2F3Y2lfaGPP" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2F3Y2lfaHwV" role="2OqNvi">
+                <ref role="3Tt5mk" to="i8ej:2F3Y2lfa$vh" resolve="condition" />
+              </node>
+            </node>
+          </node>
+          <node concept="l8MVK" id="2F3Y2lfaHEH" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="2F3Y2lfaXst" role="3cqZAp">
+          <node concept="3clFbS" id="2F3Y2lfaXsv" role="3izTki">
+            <node concept="1bpajm" id="2F3Y2lfb0s_" role="3cqZAp" />
+            <node concept="lc7rE" id="2F3Y2lfaIi6" role="3cqZAp">
+              <node concept="l9hG8" id="2F3Y2lfaIn8" role="lcghm">
+                <node concept="2OqwBi" id="2F3Y2lfaIzo" role="lb14g">
+                  <node concept="117lpO" id="2F3Y2lfaInh" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2F3Y2lfaJ2n" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i8ej:2F3Y2lfa$vj" resolve="thenBranch" />
+                  </node>
+                </node>
+              </node>
+              <node concept="l8MVK" id="2F3Y2lfaJc8" role="lcghm" />
+            </node>
+            <node concept="1bpajm" id="2F3Y2lfb6TB" role="3cqZAp" />
+            <node concept="lc7rE" id="2F3Y2lfaJwc" role="3cqZAp">
+              <node concept="l9hG8" id="2F3Y2lfaJ_F" role="lcghm">
+                <node concept="2OqwBi" id="2F3Y2lfaJLV" role="lb14g">
+                  <node concept="117lpO" id="2F3Y2lfaJ_O" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="2F3Y2lfaKgU" role="2OqNvi">
+                    <ref role="3Tt5mk" to="i8ej:2F3Y2lfa$vm" resolve="elseBranch" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="2F3Y2lfaL7B" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+              <node concept="l8MVK" id="2F3Y2lfaKqF" role="lcghm" />
             </node>
           </node>
         </node>

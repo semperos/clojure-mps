@@ -12,6 +12,7 @@
       </concept>
     </language>
     <language id="6af0e209-c61e-478c-b8ae-87516216f762" name="Clojure.Base">
+      <concept id="1444709419710148818" name="Clojure.Base.structure.CljExpression" flags="ng" index="1tPd2" />
       <concept id="1444709419710148802" name="Clojure.Base.structure.CljNamespace" flags="ng" index="1tPdi">
         <child id="1444709419710148832" name="body" index="1tPdK" />
         <child id="3081579409174692637" name="name" index="1_LZGS" />
@@ -35,6 +36,11 @@
       </concept>
       <concept id="3081579409175512448" name="Clojure.Base.structure.CljHackCoreFunction" flags="ng" index="1_ORQ_">
         <property id="3081579409175512537" name="numArgs" index="1_ORRW" />
+      </concept>
+      <concept id="3081579409177200505" name="Clojure.Base.structure.CljIf" flags="ng" index="1_UrXs">
+        <child id="3081579409177200598" name="elseBranch" index="1_UrZN" />
+        <child id="3081579409177200593" name="condition" index="1_UrZO" />
+        <child id="3081579409177200595" name="thenBranch" index="1_UrZQ" />
       </concept>
       <concept id="3081579409177110488" name="Clojure.Base.structure.CljDef" flags="ng" index="1_ULZX">
         <child id="3081579409177110773" name="var" index="1_UL3g" />
@@ -63,6 +69,18 @@
         <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
       </node>
     </node>
+    <node concept="1_UrXs" id="2F3Y2lfaGKs" role="1tPdK">
+      <node concept="1_LZH1" id="2F3Y2lfaGLa" role="1_UrZO">
+        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+      </node>
+      <node concept="1_LZH1" id="2F3Y2lfaGLd" role="1_UrZQ">
+        <ref role="1_LZIv" node="2F3Y2lfarl4" resolve="wow" />
+      </node>
+      <node concept="2ahQpA" id="2F3Y2lfaGLg" role="1_UrZN">
+        <property role="2ahQp_" value="42" />
+      </node>
+    </node>
+    <node concept="1tPd2" id="2F3Y2lfaEHU" role="1tPdK" />
     <node concept="2ahQpw" id="2F3Y2lf7n2D" role="1_LZGS">
       <property role="2ahQpZ" value="user" />
     </node>
