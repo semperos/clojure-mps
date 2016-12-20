@@ -292,6 +292,8 @@
   <node concept="1TIwiD" id="2F3Y2leYUzR">
     <property role="EcuMT" value="3081579409174145271" />
     <property role="TrG5h" value="CljVector" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="vector" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2F3Y2leYU$j" role="1TKVEi">
       <property role="IQ2ns" value="3081579409174145299" />
