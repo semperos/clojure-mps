@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/Clojure.Base/Clojure.Base.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/Clojure.Base/sandbox/Clojure.Base.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Clojure.Base.runtime/Clojure.Base.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Clojure.Base.sourcePersistence/Clojure.Base.sourcePersistence.msd" folder="" />
     </projectModules>
   </component>
 </project>
