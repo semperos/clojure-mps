@@ -21,18 +21,9 @@
         <child id="1173175577737" name="index" index="AHEQo" />
         <child id="1173175590490" name="array" index="AHHXb" />
       </concept>
-      <concept id="1153952380246" name="jetbrains.mps.baseLanguage.structure.TryStatement" flags="nn" index="2GUZhq">
-        <child id="1153952416686" name="body" index="2GV8ay" />
-        <child id="1153952429843" name="finallyBody" index="2GVbov" />
-        <child id="1164903700860" name="catchClause" index="TEXxN" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
-      </concept>
-      <concept id="1164903280175" name="jetbrains.mps.baseLanguage.structure.CatchClause" flags="nn" index="TDmWw">
-        <child id="1164903359218" name="catchBody" index="TDEfX" />
-        <child id="1164903359217" name="throwable" index="TDEfY" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -51,7 +42,6 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -68,7 +58,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -404,18 +393,6 @@
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="2GUZhq" id="2F3Y2lfpfxU" role="3cqZAp">
-                <node concept="3clFbS" id="2F3Y2lfpfpu" role="2GV8ay">
-                  <node concept="3clFbH" id="2F3Y2lfpfpt" role="3cqZAp" />
-                </node>
-                <node concept="TDmWw" id="2F3Y2lfpfpv" role="TEXxN">
-                  <node concept="3cpWsn" id="2F3Y2lfpfpx" role="TDEfY">
-                    <node concept="33vP2l" id="2F3Y2lfpfpz" role="1tU5fm" />
-                  </node>
-                  <node concept="3clFbS" id="2F3Y2lfpfp_" role="TDEfX" />
-                </node>
-                <node concept="3clFbS" id="2F3Y2lfpfxX" role="2GVbov" />
               </node>
               <node concept="3clFbF" id="2F3Y2lfm9g8" role="3cqZAp">
                 <node concept="2OqwBi" id="2F3Y2lfm9lj" role="3clFbG">
