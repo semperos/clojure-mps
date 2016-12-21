@@ -165,6 +165,9 @@
         <child id="3081579409181050230" name="catchBody" index="1_DJPj" />
         <child id="3081579409181050225" name="throwableClass" index="1_DJPk" />
       </concept>
+      <concept id="3081579409181360347" name="Clojure.Base.structure.CljExpressionSequence" flags="ng" index="1_EzzY">
+        <child id="3081579409181360348" name="expressions" index="1_EzzT" />
+      </concept>
       <concept id="3081579409174692708" name="Clojure.Base.structure.CljVarReference" flags="ng" index="1_LZH1">
         <reference id="3081579409174692794" name="targetVar" index="1_LZIv" />
       </concept>
@@ -215,12 +218,6 @@
     </node>
     <node concept="1_Xxqh" id="2F3Y2lfgP4M" role="1tPdK" />
     <node concept="1_V6JE" id="2F3Y2lfjjIw" role="1tPdK">
-      <node concept="1$eCgn" id="2F3Y2lflid9" role="1_V4A1">
-        <ref role="1_K4jk" node="2F3Y2lfgP49" resolve="println" />
-        <node concept="2ahQpA" id="2F3Y2lflidd" role="1$eChX">
-          <property role="2ahQp_" value="42" />
-        </node>
-      </node>
       <node concept="1_V6Kc" id="2F3Y2lfjjIy" role="1_V6K2">
         <node concept="1_V6Lq" id="2F3Y2lflhG6" role="1_V6NZ">
           <node concept="2ahQpw" id="2F3Y2lflhG7" role="1_V6NK">
@@ -247,10 +244,15 @@
           </node>
         </node>
       </node>
-      <node concept="1$eCgn" id="2F3Y2lfoUsh" role="1_V4A1">
-        <ref role="1_K4jk" node="2F3Y2lfgP49" resolve="println" />
-        <node concept="2ahQpA" id="2F3Y2lfoUsp" role="1$eChX">
-          <property role="2ahQp_" value="65" />
+      <node concept="1_EzzY" id="2F3Y2lfqykp" role="1_V4A1">
+        <node concept="1_LZH1" id="2F3Y2lfqA3D" role="1_EzzT">
+          <ref role="1_LZIv" node="2F3Y2lfgP32" resolve="wow" />
+        </node>
+        <node concept="1$eCgn" id="2F3Y2lfqA3L" role="1_EzzT">
+          <ref role="1_K4jk" node="2F3Y2lfgP49" resolve="println" />
+          <node concept="2ahQpA" id="2F3Y2lfqA3R" role="1$eChX">
+            <property role="2ahQp_" value="42" />
+          </node>
         </node>
       </node>
     </node>
