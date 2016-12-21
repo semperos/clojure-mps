@@ -136,6 +136,9 @@
       <concept id="681956898029808195" name="Clojure.Base.structure.CljString" flags="ng" index="2ahQpG">
         <property id="681956898029808198" name="value" index="2ahQpD" />
       </concept>
+      <concept id="681956898029808213" name="Clojure.Base.structure.CljRatioLiteral" flags="ng" index="2ahQpU">
+        <property id="681956898029808214" name="value" index="2ahQpT" />
+      </concept>
       <concept id="3081579409174002738" name="Clojure.Base.structure.CljIFnCall" flags="ng" index="1$eCgn">
         <reference id="3081579409174674673" name="callee" index="1_K4jk" />
         <child id="3081579409174002776" name="arguments" index="1$eChX" />
@@ -143,9 +146,6 @@
       <concept id="3081579409174002786" name="Clojure.Base.structure.CljVar" flags="ng" index="1$eCh7">
         <child id="3081579409174002856" name="name" index="1$eCid" />
         <child id="3081579409174002843" name="value" index="1$eCiY" />
-      </concept>
-      <concept id="3081579409178765830" name="Clojure.Base.structure.CljVarForm" flags="ng" index="1_wt8z">
-        <reference id="3081579409178766030" name="targetVar" index="1_wtbF" />
       </concept>
       <concept id="3081579409180417665" name="Clojure.Base.structure.CljRecur" flags="ng" index="1_Aaq$">
         <child id="3081579409180417886" name="recurValues" index="1_AatV" />
@@ -232,18 +232,18 @@
         </node>
         <node concept="1_V6Lq" id="2F3Y2lflidk" role="1_V6NZ">
           <node concept="2ahQpw" id="2F3Y2lflidl" role="1_V6NK">
-            <property role="2ahQpZ" value="sham" />
+            <property role="2ahQpZ" value="kazaam" />
           </node>
           <node concept="2ahQpA" id="2F3Y2lflr0y" role="1_V6NM">
             <property role="2ahQp_" value="24" />
           </node>
         </node>
-        <node concept="1_V6Lq" id="2F3Y2lflr17" role="1_V6NZ">
-          <node concept="2ahQpw" id="2F3Y2lflr18" role="1_V6NK">
-            <property role="2ahQpZ" value="kazaam" />
+        <node concept="1_V6Lq" id="2F3Y2lfqeb3" role="1_V6NZ">
+          <node concept="2ahQpw" id="2F3Y2lfqeb4" role="1_V6NK">
+            <property role="2ahQpZ" value="another" />
           </node>
-          <node concept="1_wt8z" id="2F3Y2lflr1s" role="1_V6NM">
-            <ref role="1_wtbF" node="2F3Y2lfgP32" resolve="wow" />
+          <node concept="2ahQpU" id="2F3Y2lfqjiX" role="1_V6NM">
+            <property role="2ahQpT" value="1234/234" />
           </node>
         </node>
       </node>

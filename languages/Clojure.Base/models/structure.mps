@@ -174,7 +174,7 @@
   <node concept="1TIwiD" id="_QN2Y3cqDl">
     <property role="EcuMT" value="681956898029808213" />
     <property role="TrG5h" value="CljRatioLiteral" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
     <node concept="1TJgyi" id="_QN2Y3cqDm" role="1TKVEl">
       <property role="IQ2nx" value="681956898029808214" />
       <property role="TrG5h" value="value" />
