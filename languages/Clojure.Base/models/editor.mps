@@ -12,8 +12,8 @@
   <imports>
     <import index="qw5y" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module.event(MPS.OpenAPI/)" />
     <import index="squ6" ref="r:b60215f1-3d3e-41cc-8321-723ef8eb59dd(jetbrains.mps.lang.editor.table.runtime)" />
+    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="i8ej" ref="r:38b7efd4-ca1f-46fb-bc6f-770eb19e4a2a(Clojure.Base.structure)" implicit="true" />
-    <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -33,6 +33,7 @@
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
@@ -54,6 +55,7 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -444,7 +446,7 @@
   </node>
   <node concept="PKFIW" id="2F3Y2lf51Qv">
     <property role="TrG5h" value="lparen" />
-    <ref role="1XX52x" to="i8ej:1gcCT0luZ3i" resolve="CljExpression" />
+    <ref role="1XX52x" to="i8ej:1gcCT0luZ33" resolve="CljNode" />
     <node concept="3F0ifn" id="2F3Y2lf52t8" role="2wV5jI">
       <property role="3F0ifm" value="(" />
       <node concept="11LMrY" id="2F3Y2lf52xo" role="3F10Kt">
@@ -457,7 +459,7 @@
   </node>
   <node concept="PKFIW" id="2F3Y2lf52xt">
     <property role="TrG5h" value="rparen" />
-    <ref role="1XX52x" to="i8ej:1gcCT0luZ3i" resolve="CljExpression" />
+    <ref role="1XX52x" to="i8ej:1gcCT0luZ33" resolve="CljNode" />
     <node concept="3F0ifn" id="2F3Y2lf52yO" role="2wV5jI">
       <property role="3F0ifm" value=")" />
       <node concept="11L4FC" id="2F3Y2lf52$Y" role="3F10Kt">
@@ -1027,6 +1029,109 @@
         <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
       </node>
       <node concept="l2Vlx" id="2F3Y2lfoznW" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2F3Y2lfpfH$">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfoLYc" resolve="CljTryCatchFinally" />
+    <node concept="3EZMnI" id="2F3Y2lfpgoD" role="2wV5jI">
+      <node concept="PMmxH" id="2F3Y2lfpgvP" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf51Qv" resolve="lparen" />
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfpgoN" role="3EZMnx">
+        <property role="3F0ifm" value="try" />
+      </node>
+      <node concept="3F2HdR" id="2F3Y2lfpgp2" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfpgi$" resolve="body" />
+        <node concept="l2Vlx" id="2F3Y2lfpgp4" role="2czzBx" />
+        <node concept="pVoyu" id="2F3Y2lfpgpb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2F3Y2lfpgpe" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2F3Y2lfpgpj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2F3Y2lfpgzo" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfpgiB" resolve="catchClauses" />
+        <node concept="l2Vlx" id="2F3Y2lfpgzq" role="2czzBx" />
+        <node concept="lj46D" id="2F3Y2lfpgzJ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2F3Y2lfpgzM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2F3Y2lfpg$i" role="3EZMnx">
+        <node concept="VPM3Z" id="2F3Y2lfpg$k" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="PMmxH" id="2F3Y2lfpg_2" role="3EZMnx">
+          <ref role="PMmxG" node="2F3Y2lf51Qv" resolve="lparen" />
+        </node>
+        <node concept="3F0ifn" id="2F3Y2lfpg_a" role="3EZMnx">
+          <property role="3F0ifm" value="finally" />
+        </node>
+        <node concept="3F2HdR" id="2F3Y2lfpg_n" role="3EZMnx">
+          <ref role="1NtTu8" to="i8ej:2F3Y2lfpgov" resolve="finallyBody" />
+          <node concept="l2Vlx" id="2F3Y2lfpg_p" role="2czzBx" />
+          <node concept="pVoyu" id="2F3Y2lfpg_y" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="2F3Y2lfpg__" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="2F3Y2lfpg_E" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="PMmxH" id="2F3Y2lfpgAk" role="3EZMnx">
+          <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
+        </node>
+        <node concept="l2Vlx" id="2F3Y2lfpg$n" role="2iSdaV" />
+        <node concept="lj46D" id="2F3Y2lfpg$T" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="2F3Y2lfpgv3" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfpgoG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2F3Y2lfpsCb">
+    <ref role="1XX52x" to="i8ej:2F3Y2lfpgiG" resolve="CljCatch" />
+    <node concept="3EZMnI" id="2F3Y2lfpsFb" role="2wV5jI">
+      <node concept="PMmxH" id="2F3Y2lfpsJc" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf51Qv" resolve="lparen" />
+      </node>
+      <node concept="3F0ifn" id="2F3Y2lfpsJk" role="3EZMnx">
+        <property role="3F0ifm" value="catch" />
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfpsJx" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfpglL" resolve="throwableClass" />
+      </node>
+      <node concept="3F1sOY" id="2F3Y2lfpsJM" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfpglI" resolve="throwable" />
+        <node concept="ljvvj" id="2F3Y2lfpsJW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="2F3Y2lfpsKc" role="3EZMnx">
+        <ref role="1NtTu8" to="i8ej:2F3Y2lfpglQ" resolve="catchBody" />
+        <node concept="l2Vlx" id="2F3Y2lfpsKe" role="2czzBx" />
+        <node concept="lj46D" id="2F3Y2lfpsKt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="ljvvj" id="2F3Y2lfpsKw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="2F3Y2lfpsLg" role="3EZMnx">
+        <ref role="PMmxG" node="2F3Y2lf52xt" resolve="rparen" />
+      </node>
+      <node concept="l2Vlx" id="2F3Y2lfpsFe" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -590,5 +590,67 @@
       <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2F3Y2lfoLYc">
+    <property role="EcuMT" value="3081579409180925836" />
+    <property role="TrG5h" value="CljTryCatchFinally" />
+    <property role="34LRSv" value="(try" />
+    <ref role="1TJDcQ" node="1gcCT0luZ3i" resolve="CljExpression" />
+    <node concept="1TJgyj" id="2F3Y2lfpgi$" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050020" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfpgiB" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050023" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="catchClauses" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2F3Y2lfpgiG" resolve="CljCatch" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfpgov" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050399" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="finallyBody" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+    <node concept="PrWs8" id="2F3Y2lfpgsu" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2F3Y2lfpgiG">
+    <property role="EcuMT" value="3081579409181050028" />
+    <property role="TrG5h" value="CljCatch" />
+    <ref role="1TJDcQ" node="1gcCT0luZ33" resolve="CljNode" />
+    <node concept="1TJgyj" id="2F3Y2lfpglL" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050225" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="throwableClass" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:g7uibYu" resolve="ClassifierType" />
+    </node>
+    <node concept="PrWs8" id="2F3Y2lfpglF" role="PzmwI">
+      <ref role="PrY4T" node="2F3Y2lfaer9" resolve="CljSpecialForm" />
+    </node>
+    <node concept="PrWs8" id="2F3Y2lfpwT7" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfpglI" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050222" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="throwable" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="_QN2Y3cqDf" resolve="CljSymbolLiteral" />
+    </node>
+    <node concept="1TJgyj" id="2F3Y2lfpglQ" role="1TKVEi">
+      <property role="IQ2ns" value="3081579409181050230" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="catchBody" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="1gcCT0luZ3i" resolve="CljExpression" />
+    </node>
+  </node>
 </model>
 
