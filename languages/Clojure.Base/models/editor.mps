@@ -604,13 +604,6 @@
           <property role="Vb096" value="gray" />
         </node>
       </node>
-      <node concept="1X3_iC" id="2F3Y2lfpZf$" role="lGtFl">
-        <property role="3V$3am" value="childCellModel" />
-        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
-        <node concept="PMmxH" id="2F3Y2lfpAIq" role="8Wnug">
-          <ref role="PMmxG" node="2F3Y2lfpxi5" resolve="lsquare" />
-        </node>
-      </node>
       <node concept="1X3_iC" id="2F3Y2lflivy" role="lGtFl">
         <property role="3V$3am" value="childCellModel" />
         <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
@@ -800,24 +793,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-      <node concept="1X3_iC" id="2F3Y2lfpKPz" role="lGtFl">
-        <property role="3V$3am" value="childCellModel" />
-        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
-        <node concept="3F2HdR" id="2F3Y2lfc8iB" role="8Wnug">
-          <ref role="1NtTu8" to="i8ej:2F3Y2lfbTjq" resolve="bindings" />
-          <node concept="2iRkQZ" id="2F3Y2lfc8iE" role="2czzBx" />
-          <node concept="ljvvj" id="2F3Y2lfc8iI" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-      </node>
-      <node concept="1X3_iC" id="2F3Y2lfpZjq" role="lGtFl">
-        <property role="3V$3am" value="childCellModel" />
-        <property role="3V$3ak" value="18bc6592-03a6-4e29-a83a-7ff23bde13ba/1073389446423/1073389446424" />
-        <node concept="PMmxH" id="2F3Y2lfpAIB" role="8Wnug">
-          <ref role="PMmxG" node="2F3Y2lfpxpq" resolve="rsquare" />
         </node>
       </node>
       <node concept="l2Vlx" id="2F3Y2lfc8it" role="2iSdaV" />
