@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="Clojure.Base.runtime" uuid="d7636925-d9a9-4259-be24-7a7e091d866b" moduleVersion="0" compileInMPS="false">
+<solution name="Clojure.Base.runtime" uuid="d7636925-d9a9-4259-be24-7a7e091d866b" moduleVersion="0" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
