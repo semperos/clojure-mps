@@ -11,6 +11,7 @@
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="w00o" ref="d7636925-d9a9-4259-be24-7a7e091d866b/java:clojure.java.api(Clojure.Base.runtime/)" />
+    <import index="my4z" ref="r:ed2e7e01-bf82-42b8-be43-da657463ea8f(Clojure.Base.runtime.parser)" />
     <import index="i8ej" ref="r:38b7efd4-ca1f-46fb-bc6f-770eb19e4a2a(Clojure.Base.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -116,6 +117,7 @@
         <child id="1177333559040" name="part" index="uz6Si" />
       </concept>
       <concept id="1177335944525" name="jetbrains.mps.lang.actions.structure.QueryFunction_SubstituteString" flags="in" index="uGdhv" />
+      <concept id="1177568407352" name="jetbrains.mps.lang.actions.structure.ConceptFunctionParameter_currentTargetNode" flags="nn" index="GyYSE" />
       <concept id="1154465102724" name="jetbrains.mps.lang.actions.structure.NodeSubstitutePreconditionFunction" flags="in" index="3buRE8" />
       <concept id="1112056943463" name="jetbrains.mps.lang.actions.structure.NodeSubstituteActions" flags="ng" index="3FK_9_">
         <child id="1112058057696" name="actionsBuilder" index="3FOPby" />
@@ -127,14 +129,23 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
+      <concept id="1140131837776" name="jetbrains.mps.lang.smodel.structure.Node_ReplaceWithAnotherOperation" flags="nn" index="1P9Npp">
+        <child id="1140131861877" name="replacementNode" index="1P9ThW" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -144,6 +155,12 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
     </language>
   </registry>
   <node concept="3FK_9_" id="2F3Y2lfwu0r">
@@ -265,39 +282,64 @@
         <node concept="ucClh" id="2F3Y2lfz5IS" role="uz6Si">
           <node concept="ucgPf" id="2F3Y2lfz5IT" role="ucMEw">
             <node concept="3clFbS" id="2F3Y2lfz5IU" role="2VODD2">
-              <node concept="3cpWs8" id="2F3Y2lfzqWC" role="3cqZAp">
-                <node concept="3cpWsn" id="2F3Y2lfzqWF" role="3cpWs9">
-                  <property role="TrG5h" value="example" />
-                  <node concept="3Tqbb2" id="2F3Y2lfzqWB" role="1tU5fm">
-                    <ref role="ehGHo" to="i8ej:_QN2Y3cqD9" resolve="CljIntegerLiteral" />
+              <node concept="3SKdUt" id="2C9_vIaSw2v" role="3cqZAp">
+                <node concept="3SKdUq" id="2C9_vIaSw2x" role="3SKWNk">
+                  <property role="3SKdUp" value="TODO This needs to be done for CljExpression in addition to CljEmptyLine to be usable within `let`" />
+                </node>
+              </node>
+              <node concept="3cpWs8" id="2C9_vIaRIhQ" role="3cqZAp">
+                <node concept="3cpWsn" id="2C9_vIaRIhT" role="3cpWs9">
+                  <property role="TrG5h" value="expressions" />
+                  <node concept="2I9FWS" id="2C9_vIaRIhO" role="1tU5fm">
+                    <ref role="2I9WkF" to="i8ej:1gcCT0luZ3i" resolve="CljExpression" />
                   </node>
-                  <node concept="2ShNRf" id="2F3Y2lfzr9e" role="33vP2m">
-                    <node concept="3zrR0B" id="2F3Y2lfzr9c" role="2ShVmc">
-                      <node concept="3Tqbb2" id="2F3Y2lfzr9d" role="3zrR0E">
-                        <ref role="ehGHo" to="i8ej:_QN2Y3cqD9" resolve="CljIntegerLiteral" />
+                  <node concept="2YIFZM" id="2C9_vIaRMBH" role="33vP2m">
+                    <ref role="37wK5l" to="my4z:2C9_vIaMgvN" resolve="parse" />
+                    <ref role="1Pybhc" to="my4z:2C9_vIaMguC" resolve="ClojureCodePaster" />
+                    <node concept="ub8z3" id="2C9_vIaRMH$" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="2C9_vIaRMSN" role="3cqZAp">
+                <node concept="3cpWsn" id="2C9_vIaRMSQ" role="3cpWs9">
+                  <property role="TrG5h" value="exprSeq" />
+                  <node concept="3Tqbb2" id="2C9_vIaRMSL" role="1tU5fm">
+                    <ref role="ehGHo" to="i8ej:2F3Y2lfqs3r" resolve="CljExpressionSequence" />
+                  </node>
+                  <node concept="2ShNRf" id="2C9_vIaRNEv" role="33vP2m">
+                    <node concept="3zrR0B" id="2C9_vIaRNEt" role="2ShVmc">
+                      <node concept="3Tqbb2" id="2C9_vIaRNEu" role="3zrR0E">
+                        <ref role="ehGHo" to="i8ej:2F3Y2lfqs3r" resolve="CljExpressionSequence" />
                       </node>
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2F3Y2lfzrhL" role="3cqZAp">
-                <node concept="37vLTI" id="2F3Y2lfzsnR" role="3clFbG">
-                  <node concept="2OqwBi" id="2F3Y2lfzrtm" role="37vLTJ">
-                    <node concept="37vLTw" id="2F3Y2lfzrhJ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="2F3Y2lfzqWF" resolve="example" />
+              <node concept="3clFbF" id="2C9_vIaRRQW" role="3cqZAp">
+                <node concept="2OqwBi" id="2C9_vIaRUAn" role="3clFbG">
+                  <node concept="2OqwBi" id="2C9_vIaRS3g" role="2Oq$k0">
+                    <node concept="37vLTw" id="2C9_vIaRRQU" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2C9_vIaRMSQ" resolve="exprSeq" />
                     </node>
-                    <node concept="3TrcHB" id="2F3Y2lfzrJd" role="2OqNvi">
-                      <ref role="3TsBF5" to="i8ej:_QN2Y3cqDa" resolve="value" />
+                    <node concept="3Tsc0h" id="2C9_vIaRSz7" role="2OqNvi">
+                      <ref role="3TtcxE" to="i8ej:2F3Y2lfqs3s" resolve="expressions" />
                     </node>
                   </node>
-                  <node concept="Xl_RD" id="2F3Y2lfzsVJ" role="37vLTx">
-                    <property role="Xl_RC" value="42" />
+                  <node concept="X8dFx" id="2C9_vIaRZ2O" role="2OqNvi">
+                    <node concept="37vLTw" id="2C9_vIaS1w_" role="25WWJ7">
+                      <ref role="3cqZAo" node="2C9_vIaRIhT" resolve="expressions" />
+                    </node>
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="2F3Y2lfztaO" role="3cqZAp">
-                <node concept="37vLTw" id="2F3Y2lfztaM" role="3clFbG">
-                  <ref role="3cqZAo" node="2F3Y2lfzqWF" resolve="example" />
+              <node concept="3clFbF" id="2C9_vIaS58V" role="3cqZAp">
+                <node concept="2OqwBi" id="2C9_vIaS6W$" role="3clFbG">
+                  <node concept="GyYSE" id="2C9_vIaS58T" role="2Oq$k0" />
+                  <node concept="1P9Npp" id="2C9_vIaSalb" role="2OqNvi">
+                    <node concept="37vLTw" id="2C9_vIaSaFt" role="1P9ThW">
+                      <ref role="3cqZAo" node="2C9_vIaRMSQ" resolve="exprSeq" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
