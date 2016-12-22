@@ -42,3 +42,5 @@ teamcity-info.xml
 
 **/source_gen.caches/
 **/source_gen/
+**/test_gen.caches/
+**/test_gen/
